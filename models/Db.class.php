@@ -7,7 +7,7 @@ class Db
     private function __construct()
     {
         try {
-            $this->_db = new PDO('postgres://hcwcjzbfsjcdhv:b785f945a1d37d1ac68b0ec64ee219807a18a133f756338a0fc910713a457f0c@ec2-34-251-245-108.eu-west-1.compute.amazonaws.com:5432/d8h1q8bhu266f4;dbname=d8h1q8bhu266f4;charset=utf8', 'hcwcjzbfsjcdhv', 'b785f945a1d37d1ac68b0ec64ee219807a18a133f756338a0fc910713a457f0c');
+            $this->_db = new PDO('postgres://hcwcjzbfsjcdhv:b785f945a1d37d1ac68b0ec64ee219807a18a133f756338a0fc910713a457f0c@ec2-34-251-245-108.eu-west-1.compute.amazonaws.com:5432/;dbname=d8h1q8bhu266f4;charset=utf8', 'hcwcjzbfsjcdhv', 'b785f945a1d37d1ac68b0ec64ee219807a18a133f756338a0fc910713a457f0c');
             $this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         } 
 		catch (PDOException $e) {
